@@ -43,7 +43,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     if (pageSize === window.innerWidth) return;
     setPageSize(window.innerWidth);
-  }, []);
+  }, [pageSize]);
 
   return (
     <div>
