@@ -148,16 +148,21 @@ const Home: NextPage = () => {
           </div>
           <ul className={styles.HeaderList}>
             <li>
-              <a onClick={() => scrollToComponent(aboutMe)}>About Me</a>
+              <a
+                rel="noopener noreferrer"
+                onClick={() => scrollToComponent(aboutMe)}
+              >
+                About Me
+              </a>
             </li>
             <li onClick={() => scrollToComponent(projects)}>
-              <a>Projects</a>
+              <a rel="noopener noreferrer">Projects</a>
             </li>
             <li onClick={() => scrollToComponent(services)}>
-              <a>Services</a>
+              <a rel="noopener noreferrer">Services</a>
             </li>
             <li onClick={() => scrollToComponent(skills)}>
-              <a>My Skills</a>
+              <a rel="noopener noreferrer">My Skills</a>
             </li>
           </ul>
         </div>
@@ -178,11 +183,16 @@ const Home: NextPage = () => {
                 href="https://www.linkedin.com/in/guilherme-bersi-7696861b3/"
                 target="_blank"
                 className={styles.DownloadButton}
+                rel="noopener noreferrer"
               >
                 See my carreer
               </a>
               <button className={styles.ContactButton}>
-                <a href="https://contate.me/devbersi" target="_blank">
+                <a
+                  href="https://contate.me/devbersi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Send me a Message
                 </a>
               </button>
